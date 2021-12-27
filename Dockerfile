@@ -53,7 +53,8 @@ RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
     install-php-extensions imap && \
     install-php-extensions mailparse
 
-#COPY php.ini /usr/local/etc/php/php.ini
+# Скачиваем php.ini
+ADD https://raw.githubusercontent.com/NezhkinD/docker-php/php7.4.27-fpm/php.ini /usr/local/etc/php/php.ini
 
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000
