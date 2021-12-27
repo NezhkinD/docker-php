@@ -1,1 +1,1 @@
-# docker-php
+# docker-symfony
